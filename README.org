@@ -19,7 +19,9 @@ necessary as root):
 If you did not install st with make clean install, you must compile
 the st terminfo entry with the following command:
 
+#+BEGIN_SRC shell
     tic -sx st.info
+#+END_SRC
 
 See the man page for additional details.
 
