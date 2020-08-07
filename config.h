@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:size=16:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font =  ""; //"Liberation Mono:size=16:antialias=true:autohint=true";
+static char *font2[] = {""}; //{ "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 3;
 
 /*
