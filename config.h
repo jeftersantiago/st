@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font =  "Source Code Pro:size=12:antialias=true:autohint=true";
-static char *font2[] = {""}; //{ "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font =  "Source Code Pro: pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 3;
 
 /*
@@ -110,27 +110,27 @@ float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#32302f", // hard contrast: #1d2021 / soft contrast: #32302f
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
-	[255] = 0,
-        "#ffffff", // 256 -> cursor
-	"#ffffff", // 257 -> rev cursor
-        "#000000", // "#282828",  258 -> bg
-        "#ffffff",
+"#2E3440",
+"#FF0037",
+"#27B6E2",
+"#27B6E2",
+"#2747E2",
+"#E5E9F0",
+"#ECEFF4",
+"#8FBCBB",
+"#88C0D0",
+"#81A1C1",
+"#5E81AC",
+"#BF616A",
+"#D08770",
+"#EBCB8B",
+"#A3BE8C",
+"#B48EAD",
+[255] = 0,
+"#ffffff", // 256 -> cursor
+"#ffffff", // 257 -> rev cursor
+"#000000", // "#282828",  258 -> bg
+"#ffffff",
 };
 /*
  * Default colors (colorname index)
