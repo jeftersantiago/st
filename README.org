@@ -1,28 +1,7 @@
 * st - simple terminal
-st is a simple terminal emulator for X which sucks less.
-* Requirements
-In order to build st you need the Xlib header files.
-**  For emojis and special characteres (archlinux)
-  Get the libxft-bgra from the AUR.
-* Installation
-Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
-
-Afterwards enter the following command to build and install st (if
-necessary as root):
-
-#+BEGIN_SRC shell 
+** Install with the following command
+#+BEGIN_SRC shell
   sudo make clean install
 #+END_SRC
 
-* Running st
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
-
-#+BEGIN_SRC shell
-    tic -sx st.info
-#+END_SRC
-
 See the man page for additional details.
-
-
