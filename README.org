@@ -3,6 +3,8 @@
 #+BEGIN_SRC shell
   sudo make clean install
 #+END_SRC
+** Patches
+   Go to [[https://suckless.org/hacking/][here]] to learn how to set the patches
 * Specifications
   - Font: Liberation Mono
   - Opacity is set, but to use it you need to change the
