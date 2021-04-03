@@ -11,14 +11,16 @@
     st*alpha:0.9
 #+end_src
 * Custom commands
-| Command                | Keys        |
-| Scroll Up              | Alt+Shift+U |
-| Scrool Down            | Alt+Shift+d |
-| Scrool Down   - Faster | Alt+D       |
-| Increase Zoom          | Alt+Shift+K |
-| Increase Zoom - Faster | Alt+K       |
-| Decrease Zoom          | Alt+Shift+J |
-| Decrease Zoom - Faster | Alt+J       |
+| Command                | Keys         |
+| Scroll Up              | Alt+Shift+U  |
+| Scrool Down            | Alt+Shift+d  |
+| Scrool Down   - Faster | Alt+D        |
+| Increase Zoom          | Alt+Shift+K  |
+| Increase Zoom - Faster | Alt+K        |
+| Decrease Zoom          | Alt+Shift+J  |
+| Decrease Zoom - Faster | Alt+J        |
+| Copy                   | Alt+c        |
+| Paste                  | Shift+insert |
 
 * More info
   See the man page for additional details or the original version
