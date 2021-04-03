@@ -26,4 +26,4 @@
 
 * More info
   See the man page for additional details or the original version
-  at [[st.suckless.org][suckless.org]]
+  at [[https://st.suckless.org][suckless.org]]
