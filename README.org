@@ -33,7 +33,7 @@
    sudo cp resources/st.desktop /usr/share/applications/
  #+end_src
  Now, to make it really work you have to have the [[https://aur.archlinux.org/packages/xseticon/][xseticon]] installed
- and in your .bash or .shrc add the following line:
+ and in your *.bash* or *.shrc* add the following line:
  #+begin_src sh
    xseticon -id "$WINDOWID" /usr/share/pixmaps/terminal.png
  #+end_src
