@@ -24,6 +24,19 @@
 | Copy                   | Alt+c        |
 | Paste                  | Shift+insert |
 
+* For OpenBox users
+ In order to have the icon on the window borders you have to follow these
+ steps:
+ #+begin_src sh
+   sudo cp resources/terminal.png /usr/share/pixmaps/
+# this one is only with you want the icon on menus
+   sudo cp resources/st.desktop /usr/share/applications/
+ #+end_src
+ Now, to make it really work you have to have the [[https://aur.archlinux.org/packages/xseticon/][xseticon]] installed
+ and in your .bash or .shrc add the following line:
+ #+begin_src sh
+   xseticon -id "$WINDOWID" /usr/share/pixmaps/terminal.png
+ #+end_src
 * More info
   See the man page for additional details or the original version
   at [[https://st.suckless.org][suckless.org]]
