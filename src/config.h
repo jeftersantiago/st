@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=13:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=13:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -255,10 +255,10 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 
-        { TERMMOD,              XK_d,           kscrolldown,    {.i = 1} },
-        { TERMMOD,              XK_D,           kscrolldown,    {.i = 4} },
-        { TERMMOD,              XK_u,           kscrollup,      {.i = 4} },
-        { TERMMOD,              XK_U,           kscrollup,      {.i = 1} },
+    { TERMMOD,              XK_d,           kscrolldown,    {.i = 1} },
+    { TERMMOD,              XK_D,           kscrolldown,    {.i = 4} },
+    { TERMMOD,              XK_u,           kscrollup,      {.i = 4} },
+    { TERMMOD,              XK_U,           kscrollup,      {.i = 1} },
 
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
