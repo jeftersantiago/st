@@ -37,6 +37,8 @@
  #+begin_src sh
    xseticon -id "$WINDOWID" /usr/share/pixmaps/terminal.png
  #+end_src
+* Showing emojis
+  You'll need the [[https://aur.archlinux.org/packages/libxft-bgra/][lbxft-bgra]]
 * More info
   See the man page for additional details or the original version
   at [[https://st.suckless.org][suckless.org]]
