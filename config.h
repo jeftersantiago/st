@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Iosevka:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {"JoyPixels:pixelsize=14:antialias=true:autohint=true"};
 static int borderpx = 2;
 
@@ -68,7 +68,7 @@ int ximspot_update_interval = 1000;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 9;
 
 /*
  * 1: render most of the lines/blocks characters without using the font for
@@ -111,15 +111,30 @@ float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#2E3440", "#FF0037", "#27B6E2", "#27B6E2", "#2747E2", "#E5E9F0",
-    "#ECEFF4", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#BF616A",
-    "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD",
+    "#282828",    // 0 -> Black
+    "#FF0037",    // 1 -> Red
+    "#78D25F",    // 2 -> Green
+    "#FBEA5D",    // 3 -> Yellow 
+    "#38478C",    // 4 -> Blue
+    "#FF00CE",    // 5 -> Magenta
+    "#8346C1",    // 6 -> Bright Purple
+    "#A8A8A8",    // 7 -> White
+    "#88C0D0",    // 8 -> Bright Black
+    "#81A1C1",    // 9 -> Bright Gray 
+    "#5E81AC",    // 10 -> Bright Green
+    "#BF616A",    // 11 -> Bright Yellow
+    "#D08770",    // 12 -> Bright Blue
+    "#EBCB8B",    // 13 -> Bright Magenta
+    "#A3BE8C",    // 14 -> Bright Cyan
+    "#B48EAD",    // 15 -> Bright White
     [255] = 0,
-    "#ffffff", // 256 -> cursor
-    "#ffffff", // 257 -> rev cursor
-    "#061121", //-> bg
-    "#ffffff",
+    "#FF00B2",    // 256 -> Cursor
+    "#ffffff",    // 257 -> Reverse Cursor
+    "#282828",    // -> Background
+    "#ebdbb2",    // -> Foreground
 };
+
+
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
