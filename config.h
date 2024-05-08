@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
 /*
- * appearance
+ * Appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {"JoyPixels:pixelsize=14:antialias=true:autohint=true"};
 static int borderpx = 2;
 
@@ -115,13 +115,13 @@ static const char *colorname[] = {
     "#FF0037",    // 1 -> Red
     "#78D25F",    // 2 -> Green
     "#FBEA5D",    // 3 -> Yellow 
-    "#38478C",    // 4 -> Blue
+    "#1e8f1e",    // 4 -> Green
     "#FF00CE",    // 5 -> Magenta
     "#8346C1",    // 6 -> Bright Purple
     "#A8A8A8",    // 7 -> White
     "#88C0D0",    // 8 -> Bright Black
     "#81A1C1",    // 9 -> Bright Gray 
-    "#5E81AC",    // 10 -> Bright Green
+    "#ffffff",    // 10 -> White
     "#BF616A",    // 11 -> Bright Yellow
     "#D08770",    // 12 -> Bright Blue
     "#EBCB8B",    // 13 -> Bright Magenta
@@ -130,10 +130,9 @@ static const char *colorname[] = {
     [255] = 0,
     "#FF00B2",    // 256 -> Cursor
     "#ffffff",    // 257 -> Reverse Cursor
-    "#282828",    // -> Background
-    "#ebdbb2",    // -> Foreground
+    "#272b27",    // -> Background
+    "#ffffff",    // -> Foreground
 };
-
 
 /*
  * Default colors (colorname index)
