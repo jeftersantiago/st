@@ -18,7 +18,7 @@ static int borderpx = 2;
  * 5: value of shell in config.h
  */
 
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -114,13 +114,13 @@ static const char *colorname[] = {
     "#282828",    // 0 -> Black
     "#FF0037",    // 1 -> Red
     "#78D25F",    // 2 -> Green
-    "#FBEA5D",    // 3 -> Yellow 
+    "#FBEA5D",    // 3 -> Yellow
     "#1e8f1e",    // 4 -> Green
     "#FF00CE",    // 5 -> Magenta
     "#8346C1",    // 6 -> Bright Purple
     "#A8A8A8",    // 7 -> White
     "#88C0D0",    // 8 -> Bright Black
-    "#81A1C1",    // 9 -> Bright Gray 
+    "#81A1C1",    // 9 -> Bright Gray
     "#ffffff",    // 10 -> White
     "#BF616A",    // 11 -> Bright Yellow
     "#D08770",    // 12 -> Bright Blue
