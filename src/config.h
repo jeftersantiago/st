@@ -5,9 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = {"JoyPixels:pixelsize=14:antialias=true:autohint=true"};
-static int borderpx = 2;
+static char *font = "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true"; // "monospace:pixelsize=12:antialias=true:autohint=true";
+// static char *font2[] = {"NotoSans Nerd Font Mono:pixelsize=12:antialias=true:autohint=true"};
+static char *font2[] = {"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true" };
+
+static int borderpx = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -111,28 +113,32 @@ float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#282828",    // 0 -> Black
-    "#FF0037",    // 1 -> Red
-    "#78D25F",    // 2 -> Green
-    "#FBEA5D",    // 3 -> Yellow
-    "#1e8f1e",    // 4 -> Green
-    "#FF00CE",    // 5 -> Magenta
-    "#8346C1",    // 6 -> Bright Purple
-    "#A8A8A8",    // 7 -> White
-    "#88C0D0",    // 8 -> Bright Black
-    "#81A1C1",    // 9 -> Bright Gray
-    "#ffffff",    // 10 -> White
-    "#BF616A",    // 11 -> Bright Yellow
-    "#D08770",    // 12 -> Bright Blue
-    "#EBCB8B",    // 13 -> Bright Magenta
-    "#A3BE8C",    // 14 -> Bright Cyan
-    "#B48EAD",    // 15 -> Bright White
-    [255] = 0,
-    "#FF00B2",    // 256 -> Cursor
-    "#ffffff",    // 257 -> Reverse Cursor
-    "#272b27",    // -> Background
-    "#ffffff",    // -> Foreground
+	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#f05952",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#b16286",
+	"#689d6a",
+	"#a89984",
+	"#928374",
+	"#f15a48",
+	"#b8bb26",
+	"#fabd2f",
+	"#83a598",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
+	[255] = 0,
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#add8e6", /* 256 -> cursor */
+	"#555555", /* 257 -> rev cursor*/
+	"#282828", /* 258 -> bg */
+	"#ebdbb2", /* 259 -> fg */
 };
+
+
+
 
 /*
  * Default colors (colorname index)
@@ -274,6 +280,7 @@ static Shortcut shortcuts[] = {
     {TERMMOD, XK_J, zoom, {.f = -1}},
     {MODKEY, XK_k, zoom, {.f = +2}},
     {MODKEY, XK_j, zoom, {.f = -2}},
+
 
     {MODKEY, XK_l, externalpipe, {.v = openurlcmd}},
     {MODKEY, XK_y, externalpipe, {.v = copyurlcmd}},
