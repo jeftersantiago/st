@@ -5,9 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true"; // "monospace:pixelsize=12:antialias=true:autohint=true";
+    
+static char *font = "Iosevka Nerd Font:pixelsize=16:antialias=true:autohint=true"; 
+// "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true"; // "monospace:pixelsize=12:antialias=true:autohint=true";
 // static char *font2[] = {"NotoSans Nerd Font Mono:pixelsize=12:antialias=true:autohint=true"};
-static char *font2[] = {"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true" };
+static char *font2[] = {"Iosevka:pixelsize=12:antialias=true:autohint=true" };
 
 static int borderpx = 1;
 
@@ -278,11 +280,11 @@ static Shortcut shortcuts[] = {
     {TERMMOD, XK_Down, zoom, {.f = -1}},
     {TERMMOD, XK_K, zoom, {.f = +1}},
     {TERMMOD, XK_J, zoom, {.f = -1}},
-    {MODKEY, XK_k, zoom, {.f = +2}},
-    {MODKEY, XK_j, zoom, {.f = -2}},
+//  {MODKEY, XK_k, zoom, {.f = +2}},
+//  {MODKEY, XK_j, zoom, {.f = -2}},
 
 
-    {MODKEY, XK_l, externalpipe, {.v = openurlcmd}},
+//    {MODKEY, XK_l, externalpipe, {.v = openurlcmd}},
     {MODKEY, XK_y, externalpipe, {.v = copyurlcmd}},
     {MODKEY, XK_o, externalpipe, {.v = copyoutput}},
 };
